@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<br>
+<form action='/calculate' method='post'>
+    <p>First number:</p>
+    {{calcform.first_num}}
+    <br>
+    <p>Second number:</p>
+    {{calcform.second_num}}
+    <br>
+    <p>Choose operation:</p>
+    {{calcform.opts}}
+    <br>
+    <br>
+    {{calcform.button}}
+    <h3>{{result}}</h3>
+    <br>
+    <a href={{url_for('history_page')}}>See your previous calculations</a>
+</form>
+</body>
+</html>
